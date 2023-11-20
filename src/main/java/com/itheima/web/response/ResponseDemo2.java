@@ -1,15 +1,17 @@
 package com.itheima.web.response;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(value = "/resp1")
-public class ResponseDemo extends HttpServlet {
+@WebServlet(value = "/resp2")
+public class ResponseDemo2 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("resp1....");
+        System.out.println("resp2....");
     }
 
     @Override

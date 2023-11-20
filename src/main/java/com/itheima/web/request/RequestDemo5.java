@@ -1,5 +1,5 @@
 
-package com.itheima.web;
+package com.itheima.web.request;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

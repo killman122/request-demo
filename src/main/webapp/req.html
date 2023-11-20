@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<form action="/request-demo/req3" method="get">
+<!--在action中填写虚拟路径也就是通过之前的HttpServlet中的getContextPath()方法+
+资源路径的名称(这里的资源路径的名称就是Servlet中的@WebServlet(urlPatterns = {"/req1"})注解中的路径,
+路径可以随便起名但是需要和Servlet中的注解下的urlPatterns的路径相同)
+-->
+    <input type="text" name="username"><br><!--为什么要在form表单中的子表单的标签中添加name属性:  答: 为了将表单中的数据在发送到后台的时候后台知道传送过来的数据是干什么, 并且需要通过key来获取这些对应的value-->
+    <input type="password" name="password"><br>
+    <input type="checkbox" name="hobby" value="1">游泳
+    <input type="checkbox" name="hobby" value="2">洗澡
+    <input type="checkbox" name="hobby" value="3">爬山
+    <input type="submit">
+</form>
 </body>
 </html>

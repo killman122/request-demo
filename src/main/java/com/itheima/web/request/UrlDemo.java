@@ -1,9 +1,12 @@
-package com.itheima.web;
+package com.itheima.web.request;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 
+/**
+ * 使用URL编码和URL解码, 解析中文数据
+ */
 public class UrlDemo {
     public static void main(String[] args) throws UnsupportedEncodingException {
         String name = "张三";
